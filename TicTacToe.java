@@ -86,7 +86,7 @@ public class TicTacToe {
     return null;
   }
 
-  static Character checkDiagonal(String[] rows) {
+  static Character checkDiagonals(String[] rows) {
 
       String[] diagonals = {"", ""};
       int x = rows.length - 1;
@@ -124,7 +124,7 @@ public class TicTacToe {
     }
     
     if (winner == null) {
-      winner = checkDiagonal(rows);
+      winner = checkDiagonals(rows);
     }
     
     System.out.println("Winner is Player: " + winner);
